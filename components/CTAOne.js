@@ -1,0 +1,52 @@
+import React from "react";
+import BlockTitle from "./BlockTitle";
+
+import CtaShape1 from "../assets/images/shapes/cta-1-shape-1.png";
+import CtaShape2 from "../assets/images/shapes/cta-1-shape-2.png";
+import CtaMoc1 from "../assets/images/resources/cta-1-moc-1.png";
+
+const CTAOne = () => {
+  return (
+    <section className="cta-one">
+      <img src={CtaShape1} className="cta-one__bg-shape-1" alt="" />
+      <img src={CtaShape2} className="cta-one__bg-shape-2" alt="" />
+      <div className="container">
+        <div className="cta-one__moc wow fadeInLeft" data-wow-duration="1500ms">
+          <img style={{width: '850px', height: '600px'}} src={CtaMoc1} className="cta-one__moc-img" alt="" />
+        </div>
+        <div className="row justify-content-end">
+          <div className="col-lg-5">
+            <div className="cta-one__content">
+              <BlockTitle
+                textAlign="left"
+                paraText="Our Best Work"
+                titleText={`SALOON INTERIOR`}
+              />
+              <div className="cta-one__text">
+                <p>
+                Client was asking for a full mirror structure with lights connected to the ceiling.
+                </p>
+              </div>
+              <ul className="list-unstyled cta-one__list">
+                <li>
+                  <i className="fa fa-check-circle"></i>
+                  We provided an beautiful structure that connected both mirror and lights
+                </li>
+                <li>
+                  <i className="fa fa-check-circle"></i>
+                  Customers had the full experience of observing their hair being cut
+                </li>
+                <li>
+                  <i className="fa fa-check-circle"></i>
+                  The overall landscape of the room was astonishing.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CTAOne;
