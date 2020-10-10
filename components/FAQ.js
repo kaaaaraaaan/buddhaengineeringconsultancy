@@ -22,7 +22,7 @@ const FAQ = (props) => {
           <AccordionItem
             title="Will you perform the required procedure on Municipality for us?"
             content="For clients who are physically disabled and donot have any means to go to the Municipality to perfrom this process, certain compensations can be done."
-            status={true}
+            status={false}
           />
           <AccordionItem
             title="What is the basic charge for a Ghar Naksa for a normal house?"

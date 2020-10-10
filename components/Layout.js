@@ -39,16 +39,6 @@ const Layout = (props) => {
 
       <div className="page-wrapper">{props.children}</div>
 
-      {scrollTop === true ? (
-        <ScrollLink
-          to="home"
-          smooth={true}
-          duration={500}
-          className="scroll-to-top"
-        >
-          <i className="fa fa-angle-up"></i>
-        </ScrollLink>
-      ) : null}
     </div>
   );
 };
